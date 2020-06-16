@@ -25,11 +25,15 @@ android {
         debug {
             buildConfigField "String", 'BASE_URL', "\"https://stg-api.yourbackend.com\""
         }
-
         staging {
             buildConfigField "String", 'BASE_URL', "\"https://stg-api.yourbackend.com\""
         }
         buidforloc {
+            buildConfigField "String", 'BASE_URL', "\"https://loc-api.yourbackend.com\""
+        }
+
+        debug_release {
+            debuggable true
             buildConfigField "String", 'BASE_URL', "\"https://loc-api.yourbackend.com\""
         }
     }
